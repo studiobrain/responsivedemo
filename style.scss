@@ -8,17 +8,30 @@ body {padding: 0px; margin: 0px; background: #000; border-top: 10px solid #00fbf
 
 #container {
 	width: 1000px;
-	//background-color: #0a00ff;
 	margin: 0 auto;
 	
 	@media screen and (max-width: 999px){
-    	//background-color: #0a00ff;
     	width: 100%;
+    	
+    	.content {
+	    	
+	    	ul {
+		    	li {
+			    	
+			    	&:last-child {
+			    		display: none;
+			    	}
+		    	}
+	    	}
+	    	
+	    	article {
+    			width: 43%;
+			}
+    	}
+    	
     }
 	@media screen and (max-width: 768px){
-    	//background-color: #0016ff;
-    	
-    	nav{
+		nav{
 	    	margin-top: 0px;
 	    	
 		    li {
@@ -29,7 +42,7 @@ body {padding: 0px; margin: 0px; background: #000; border-top: 10px solid #00fbf
 					border-right: 0px; 
 				}
 		    	a {
-		    		background: #999;
+		    		background: #666;
 		    		border-top: 1px solid #fff;
 		    		width: 12.5%;
 		    		padding: 8px;
@@ -38,9 +51,26 @@ body {padding: 0px; margin: 0px; background: #000; border-top: 10px solid #00fbf
 	    	}
     	}
     	
+    	header {
+	    	top: 10px;
+	    	height: 300px;
+		}
+    	
+    	.content {
+	    	ul {
+	    		top: 10px;
+		    	left:20px;
+		    	
+		    	li {
+		    	
+			    	article {
+			    		width:89%; 
+			    	}
+		    	}
+	    	}
+	    }
     }
 	@media screen and (max-width: 480px){
-    	//background-color: #00ff52;
     	nav {
 	    	margin-top: 0px;
     	
@@ -54,18 +84,46 @@ body {padding: 0px; margin: 0px; background: #000; border-top: 10px solid #00fbf
 				}
 				
 				a {
-					background: #999;
+					background: #666;
 					width: 100%;
 					padding-left: 0px;
 					font-size: $font-size-full;
 				}
 			}
 		}
+		
+		header {
+			width: 90%;
+	    	height: 100px;
+		}
+		
+		.content {
+			
+			ul {
+	    		top: 10px;
+		    	left:0px;
+		    	
+		    	li {
+		    	
+		    		h2 {
+				    	font-size: $font-size-mid;
+				    }
+			    	p {
+			    		display: none;
+			    	}
+			    }
+	    	}
+	    }
 	}
 }
 
 header {
+	width: 89%;
 	height: 400px;
+	margin: 0 auto;
+	background: #999;
+	position: relative;
+	top: 30px;
 }
 
 nav{
@@ -120,4 +178,44 @@ nav{
 	height: 106px;
 	z-index: 10000;
 }
+
+.content {
+	ul {
+		padding: 0px;
+		position: relative;
+		left: 30px;
+		top: 30px;
+		
+		li {
+			display: block;
+		
+			article {
+				//margin: 0 auto;
+				color: #fff;
+				position: relative;
+				float: left;
+				font-family: Helvetica;
+				font-size: 12pt;
+				width: 28%;
+				text-align: justify;
+				margin: 0px 0px 0px 25px;
+			
+				h2 {
+					font-family: Impact;
+					font-size: 31px;
+					padding: 0px;
+					margin: 0px;
+				}
+				
+				p {
+					padding: 0px;
+					margin: 0px;
+				}
+			}
+		}
+	}
+	
+}	
+
+
 		

@@ -12,7 +12,11 @@ body {
   margin: 0 auto; }
   @media screen and (max-width: 999px) {
     #container {
-      width: 100%; } }
+      width: 100%; }
+      #container .content ul li:last-child {
+        display: none; }
+      #container .content article {
+        width: 43%; } }
   @media screen and (max-width: 768px) {
     #container nav {
       margin-top: 0px; }
@@ -22,11 +26,19 @@ body {
           padding: 0px;
           border-right: 0px; }
         #container nav li a {
-          background: #999;
+          background: #666;
           border-top: 1px solid #fff;
           width: 12.5%;
           padding: 8px;
-          font-size: 18px; } }
+          font-size: 18px; }
+    #container header {
+      top: 10px;
+      height: 300px; }
+    #container .content ul {
+      top: 10px;
+      left: 20px; }
+      #container .content ul li article {
+        width: 89%; } }
   @media screen and (max-width: 480px) {
     #container nav {
       margin-top: 0px; }
@@ -37,13 +49,28 @@ body {
         #container nav li#logoSpace {
           padding: 0px; }
         #container nav li a {
-          background: #999;
+          background: #666;
           width: 100%;
           padding-left: 0px;
-          font-size: 26px; } }
+          font-size: 26px; }
+    #container header {
+      width: 90%;
+      height: 100px; }
+    #container .content ul {
+      top: 10px;
+      left: 0px; }
+      #container .content ul li h2 {
+        font-size: 18px; }
+      #container .content ul li p {
+        display: none; } }
 
 header {
-  height: 400px; }
+  width: 89%;
+  height: 400px;
+  margin: 0 auto;
+  background: #999;
+  position: relative;
+  top: 30px; }
 
 nav {
   list-style: none;
@@ -82,3 +109,28 @@ nav {
   width: 98px;
   height: 106px;
   z-index: 10000; }
+
+.content ul {
+  padding: 0px;
+  position: relative;
+  left: 30px;
+  top: 30px; }
+  .content ul li {
+    display: block; }
+    .content ul li article {
+      color: #fff;
+      position: relative;
+      float: left;
+      font-family: Helvetica;
+      font-size: 12pt;
+      width: 28%;
+      text-align: justify;
+      margin: 0px 0px 0px 25px; }
+      .content ul li article h2 {
+        font-family: Impact;
+        font-size: 31px;
+        padding: 0px;
+        margin: 0px; }
+      .content ul li article p {
+        padding: 0px;
+        margin: 0px; }
