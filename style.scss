@@ -1,0 +1,123 @@
+$blue:			 	#00214D;
+$font-size-full: 	26px;
+$font-size-mid:		18px;
+$font-size-small:	15px;
+
+html {display: block}
+body {padding: 0px; margin: 0px; background: #000; border-top: 10px solid #00fbff;}
+
+#container {
+	width: 1000px;
+	//background-color: #0a00ff;
+	margin: 0 auto;
+	
+	@media screen and (max-width: 999px){
+    	//background-color: #0a00ff;
+    	width: 100%;
+    }
+	@media screen and (max-width: 768px){
+    	//background-color: #0016ff;
+    	
+    	nav{
+	    	margin-top: 0px;
+	    	
+		    li {
+				border-right: 0px; 
+				
+		    	&#logoSpace {
+					padding: 0px; 
+					border-right: 0px; 
+				}
+		    	a {
+		    		background: #999;
+		    		border-top: 1px solid #fff;
+		    		width: 12.5%;
+		    		padding: 8px;
+					font-size: $font-size-mid;
+				}
+	    	}
+    	}
+    	
+    }
+	@media screen and (max-width: 480px){
+    	//background-color: #00ff52;
+    	nav {
+	    	margin-top: 0px;
+    	
+	    	li {
+				display:block;
+				border-right: 0px;
+				padding: 1px 0px 1px 0px;
+				
+				&#logoSpace {
+					padding: 0px;
+				}
+				
+				a {
+					background: #999;
+					width: 100%;
+					padding-left: 0px;
+					font-size: $font-size-full;
+				}
+			}
+		}
+	}
+}
+
+header {
+	height: 400px;
+}
+
+nav{
+	list-style: none;
+	margin-top: -85px;	
+	padding: 0px;
+	position: relative;
+	//font-family: "alternate-gothic-no-2-d",sans-serif;
+	font-family: Impact;
+	text-transform: uppercase;
+	width: auto;
+	
+	ul{
+		text-align: center;
+		margin: 0px;
+		padding: 0px;
+		
+		li {
+			display: inline;
+			border-right: 1px solid #fff;
+			padding: 10px 0px 10px 0px;
+			&:last-child{
+            	border-right: 0px;
+            }
+            
+            &.noLine {
+				border-right: 0px; 
+			}	
+			
+			&#logoSpace {
+				padding: 40px;; 
+			}
+			
+			a {
+				//background: #999;
+				display:inline-block;
+				padding:10px;
+				margin: 0px;
+				width: 10%;
+				text-decoration: none;
+				color: #fff;
+				font-size: $font-size-full;
+			}	
+		}
+	}
+}
+
+.logo {
+	margin: 0 auto;
+	background: url("images/studiobrainchild.png") no-repeat fixed center top;
+	width: 98px;
+	height: 106px;
+	z-index: 10000;
+}
+		

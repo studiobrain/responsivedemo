@@ -1,0 +1,84 @@
+html {
+  display: block; }
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #000;
+  border-top: 10px solid #00fbff; }
+
+#container {
+  width: 1000px;
+  margin: 0 auto; }
+  @media screen and (max-width: 999px) {
+    #container {
+      width: 100%; } }
+  @media screen and (max-width: 768px) {
+    #container nav {
+      margin-top: 0px; }
+      #container nav li {
+        border-right: 0px; }
+        #container nav li#logoSpace {
+          padding: 0px;
+          border-right: 0px; }
+        #container nav li a {
+          background: #999;
+          border-top: 1px solid #fff;
+          width: 12.5%;
+          padding: 8px;
+          font-size: 18px; } }
+  @media screen and (max-width: 480px) {
+    #container nav {
+      margin-top: 0px; }
+      #container nav li {
+        display: block;
+        border-right: 0px;
+        padding: 1px 0px 1px 0px; }
+        #container nav li#logoSpace {
+          padding: 0px; }
+        #container nav li a {
+          background: #999;
+          width: 100%;
+          padding-left: 0px;
+          font-size: 26px; } }
+
+header {
+  height: 400px; }
+
+nav {
+  list-style: none;
+  margin-top: -85px;
+  padding: 0px;
+  position: relative;
+  font-family: Impact;
+  text-transform: uppercase;
+  width: auto; }
+  nav ul {
+    text-align: center;
+    margin: 0px;
+    padding: 0px; }
+    nav ul li {
+      display: inline;
+      border-right: 1px solid #fff;
+      padding: 10px 0px 10px 0px; }
+      nav ul li:last-child {
+        border-right: 0px; }
+      nav ul li.noLine {
+        border-right: 0px; }
+      nav ul li#logoSpace {
+        padding: 40px; }
+      nav ul li a {
+        display: inline-block;
+        padding: 10px;
+        margin: 0px;
+        width: 10%;
+        text-decoration: none;
+        color: #fff;
+        font-size: 26px; }
+
+.logo {
+  margin: 0 auto;
+  background: url("images/studiobrainchild.png") no-repeat fixed center top;
+  width: 98px;
+  height: 106px;
+  z-index: 10000; }
